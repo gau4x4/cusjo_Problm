@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Details</title>
+    <link rel="stylesheet" href="css/tooltipster.css" />
+    <link rel="stylesheet" href="css/mCustomScrollbar.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="udrMainWrapper">
+        <div class="udrInnerWrapper">
+            <div class="udrInnerLeftBanner">
+                <h4 class="udrMobHeading">User Registration</h4>
+                <div class="udrBannerBox"></div>
+            </div>
+            <div class="udrRegistrationDetails">
+                <div class="udrRegInnerWrapper">
+                    <h2 class="udrInnerHeading">User Registration</h2>
+                    <div class="udrInnerRow udrNameDetail">
+                        <div class="udrCol-4">
+                            <label for="udrFirstName" class="udrInputLabel">First Name</label>
+                            <input id="udrFirstName" type="text" class="udrInputBox" placeholder="Enter First Name" />
+                        </div>
+                        <div class="udrCol-4">
+                            <label for="udrMiddleName" class="udrInputLabel">Middle Name</label>
+                            <input id="udrMiddleName" type="text" class="udrInputBox" placeholder="Enter Middle Name" />
+                        </div>
+                        <div class="udrCol-4">
+                            <label for="udrLastName" class="udrInputLabel">Last Name</label>
+                            <input id="udrLastName" type="text" class="udrInputBox" placeholder="Enter Last Name" />
+                        </div>
+                    </div>
+                    <div class="udrInnerRow udrOtherDetails">
+                        <div class="udrVerificCol-1">
+                            <label for="udrEmailId" class="udrInputLabel">Email Id</label>
+                            <input id="udrEmailId" type="text" class="udrInputBox" placeholder="Enter Email Id" value="John.smith@gmail.com" />
+                            <span id="udrDefTickIcon" class="udrTickIcon"></span>
+                        </div>
+                        <div class="udrVeryBtnBox">
+                            <button id="udrEmailVeriBtn" class="udrVerifyBtn">Verify Email ID</button>
+                            <button class="udrVeriFiedBtn">
+                                <span>Verified</span>
+                                <span class="udrTickIcon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="udrInnerRow udrEmailVeriLinkBox">
+                        An Email Verification Link has been sent to your email id. Please verify it
+                    </div>
+
+                    <div class="udrInnerRow udrOtherDetails">
+                        <div class="udrVerificCol-1">
+                            <label for="udrMobileNumber" class="udrInputLabel">Mobile Number</label>
+                            <input id="udrMobileNumber" type="text" class="udrInputBox" maxlength="10" placeholder="Enter Mobile Number" />
+                            <span class="udrTickIcon"></span>
+                        </div>
+                        <div class="udrVeryBtnBox">
+                            <button id="udrMobVeriId" class="udrVerifyBtn">Verify Mobile No.</button>
+                            <button class="udrVeriFiedBtn">
+                                <span>Verified</span>
+                                <span  class="udrTickIcon"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- VERIFY MOBILE NUMBER NEW CHANGES BY GAURAV MAY2020 -->
+                    <div class="udrInnerRow udrOtpVerifBox">
+                        <div class="udrVerifiedStatus">
+                            <div class="udrVerfcnMsg">
+                                <p> OTP sent successfully to your registered Mobile No. & Email ID</p>
+                            </div>
+                            <div class="udrVerfdMsg">
+                                <p>Mobile Number has been verified successfully</p>
+                            </div>
+                        </div>
+                        <div class="udrOtpMechBox">
+                            <div class="udrOtpMechInnerBox">
+                                <label for="udrOtpNumber" class="udrInputLabel">OTP</label>
+                                <div class="udrOtpContainer">
+                                    <input id="udrOtpNumber" type="password" maxlength="1" class="udrOtpInputBox">
+                                    <input type="password" maxlength="1" class="udrOtpInputBox">
+                                    <input type="password" maxlength="1" class="udrOtpInputBox">
+                                    <input type="password" maxlength="1" class="udrOtpInputBox">
+                                </div>
+                            </div>
+
+                            <div class="udrVeryBtnBox udrOtpVerBox">
+                                <button id="udrOtpVBtn" class="udrVerifyBtn btnDisabled">
+                                    <span class="udrBtnVeriText">Verify OTP</span>
+                                    <span class="loading">
+                                        <span class="loading__dot"></span>
+                                        <span class="loading__dot"></span>
+                                        <span class="loading__dot"></span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="udrResendBox">
+                                <a class="udrResendBtn" href="javascript:void(0);">Resend</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- VERIFY MOBILE NUMBER NEW CHANGES BY GAURAV MAY2020 -->
+
+                    <div class="udrInnerRow udrOtherDetails">
+                        <div class="udrVerificCol-1">
+                            <label for="udrLoginId" class="udrInputLabel">Login Id</label>
+                            <input id="udrLoginId" type="text" class="udrInputBox" placeholder="Enter Login Id" />
+                            <span class="udrTickIcon"></span>
+                        </div>
+
+                        <div class="udrVeryBtnBox">
+                            <button id="udrCheckAvbBtn" class="udrVerifyBtn">Check Availability</button>
+                            <button id="udrVerifiedMbNum" class="udrVeriFiedBtn">
+                                <span>Available</span>
+                                <span class="udrTickIcon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="udrInnerRow udrErrorStateBox">
+                        <div class="udrErrorStateRow">
+                            <div class="udrErrorContent">
+                                <span class="UdrErrorIcon"></span>
+                                <p class="udrErrorMessage">This Login Id isn't availabel. Please try another or these:</p>
+                            </div>
+                            <div class="udrLoginIdAutoList">
+                                <a href="#nogo" class="udrUserIdText">gau4x4</a>
+                                <a href="#nogo" class="udrUserIdText">Smith.jakson</a>
+                                <a href="#nogo" class="udrUserIdText">sayeret.matkal</a>
+                                <a href="#nogo" class="udrUserIdText">fsb_Kzb</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="udrInnerRow udrSSOLoginBox">
+                        <h4 class="udrSSOLoginHeader">
+                            Link To
+                        </h4>
+                        <div class="udrInnerRow udrSSOCol-4">
+                            <button class="udrSSOLoginBtn udrOkGSSOBtn">
+                                <span class="udrSsoIcon udrGoogleIcon"></span>
+                                <span class="udrBtnInnerText">Google</span>
+                            </button>
+                            <button class="udrSSOLoginBtn">
+                                <span class="udrSsoIcon udrFacebookIcon"></span>
+                                <span class="udrBtnInnerText">Facebook</span>
+                            </button>
+                            <button class="udrSSOLoginBtn">
+                                <span class="udrSsoIcon udrLinkedinIcon"></span>
+                                <span class="udrBtnInnerText">Linkedin</span>
+                            </button>
+                            <!-- <button class="udrSSOLoginBtn udrOkFSSOBtn">
+                                <span class="udrSsoIcon udrFacebookIcon"></span>
+                                <span class="udrBtnInnerText">Google</span>
+                            </button>
+                            <button class="udrSSOLoginBtn udrOkISSOBtn">
+                                <span class="udrSsoIcon udrLinkedinIcon"></span>
+                                <span class="udrBtnInnerText">Google</span>
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="udrInnerRow udrFooterRow">
+                        <button class="udrPosBtn">
+                               Save
+                         </button>
+                        <button class="udrNegBtn">
+                               Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
